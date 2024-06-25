@@ -1,0 +1,12 @@
+in .condarc set the default pkg and env dir to /blue/adamdewan/conda/pkgs
+/blue/adamdewan/conda/envs
+
+create jupyter kernel in /blue/adamdewan/jupyter/kernels
+
+creates sym link between the kernel and ~/.local/share/jupyter/kernels
+
+create the DLC environment using mamba
+
+uv pip uninstall deeplabcut
+uv pip install -e .[tf] 
+to install tensorflow

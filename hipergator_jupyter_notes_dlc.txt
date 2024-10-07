@@ -1,7 +1,7 @@
 in .condarc set the default pkg and env dir to /blue/adamdewan/conda/pkgs
 /blue/adamdewan/conda/envs
 
-create jupyter kernel in /blue/adamdewan/jupyter/kernels
+clone kernel from github 
 
 creates sym link between the kernel and ~/.local/share/jupyter/kernels
 

@@ -1,6 +1,8 @@
 in .condarc set the default pkg and env dir to /blue/adamdewan/conda/pkgs
 /blue/adamdewan/conda/envs
 
+as of 10/9/2024, cuda 11.0 on hipergator must be used
+
 clone kernel from github 
 
 creates sym link between the kernel and ln -s [DIR TO KERNAL FOLDER] ~/.local/share/jupyter/kernels/
@@ -8,7 +10,13 @@ creates sym link between the kernel and ln -s [DIR TO KERNAL FOLDER] ~/.local/sh
 load conda module
 
 create the DLC environment using mamba
+if you change the environment name update run.sh in the kernel folder
 
+pip install uv
 uv pip uninstall deeplabcut
-uv pip install -e .[tf] 
-to install tensorflow
+uv pip install -e .[tf] to install tensorflow
+uv pip uninstall tensorflow
+uv pip install "tensorflow==2.15"
+uv pip uninstall matplotlib
+pip install matplotlib <3.5
+uv pip install ipympl

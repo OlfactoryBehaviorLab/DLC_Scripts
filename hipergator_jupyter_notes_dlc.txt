@@ -3,7 +3,9 @@ in .condarc set the default pkg and env dir to /blue/adamdewan/conda/pkgs
 
 clone kernel from github 
 
-creates sym link between the kernel and ~/.local/share/jupyter/kernels
+creates sym link between the kernel and ln -s [DIR TO KERNAL FOLDER] ~/.local/share/jupyter/kernels/
+
+load conda module
 
 create the DLC environment using mamba
 
